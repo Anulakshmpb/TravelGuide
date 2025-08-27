@@ -1,0 +1,58 @@
+/* contact */
+.contact{
+    margin-top: 30px;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 40%;
+   
+}
+.contact-right{
+    flex-basis: 60%;
+    margin-right: 25px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 300px;
+    border: 0;
+    outline: none;
+    background: rgb(153, 177, 197);
+    padding: 15px;
+    margin: 15px 0;
+    color: #080808;
+    font-size: 18p;
+    border-radius: 6px;
+}
+form input:hover, form textarea:hover{
+    box-shadow: 5px 5px 10px  rgb(27, 74, 112);
+}
+form .btn2{
+    background: rgb(51, 128, 192);
+    border: 1px solid rgb(36, 84, 124);
+    border-radius: 14px;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+form .btn2:hover{
+    background-color:rgb(94, 147, 189) ;
+    box-shadow: 5px 5px 10px  rgb(27, 74, 112);
+}
+.h4{
+    width: 100%;
+    line-height: 25px;
+    
+    
+}
+.con{
+    margin-bottom: 20px;
+}
+ @media only screen and (max-width:600px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+ }

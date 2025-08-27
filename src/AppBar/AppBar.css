@@ -1,0 +1,14 @@
+Button:hover{
+background-color: rgb(85, 139, 226);
+border-radius: 20px;
+color: black;
+}
+Button{
+   color: rgb(251, 249, 249);
+}
+.css-1uent87-MuiButtonBase-root-MuiButton-root {
+   color: rgb(249, 247, 247);
+}
+#root {
+  width: 100%;
+}

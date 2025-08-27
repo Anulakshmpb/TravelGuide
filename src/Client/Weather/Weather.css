@@ -1,0 +1,210 @@
+header {
+    background-image: url('https://wallpapercave.com/wp/wp7399696.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(242, 238, 238, 0);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+
+.h1 {
+    font-size: 1.875rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgb(146, 211, 249);
+    color: #101011;
+    font-size: 39px;
+}
+.head{
+    display: flex;
+    width: 100%;
+}
+.left{
+    width: 60%;
+    padding-top: 20px;
+}
+.search-input-wrapper {
+  position: relative;
+  width: 220px; 
+}
+
+.search-input-wrapper .search-icon {
+    margin-top: 26px;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#sinput {
+    margin-top: 50px;
+  width: 250px;
+  padding-left: 36px; 
+  height: 40px;       
+  box-sizing: border-box;
+  font-size: 15px;
+  background-color: rgb(137, 223, 236);
+  border: 1px outset rgb(50, 162, 196);
+  border-radius: 15px;
+}
+.weather{
+    display: flex;
+    width: 60%;
+    margin-top: 50px;
+    background-color: rgba(101, 148, 171, 0.4);
+    
+}
+.weather:hover{
+background-color: rgba(126, 184, 213, 0.4);
+width: 63%;
+
+}
+.w1{
+    margin-top: 100px;
+    width:50% ;
+    align-items: center;
+    justify-content: center;
+}
+.w2{
+    margin-left: 10px;
+    width:50%;
+    color: #101011;
+}
+.forecast{
+   margin-left: 20px;
+   justify-content:space-around;
+   
+}
+.hr{
+    color: rgb(77, 142, 180);
+}
+.forecast{
+    display: flex;
+}
+.forecast box{
+    width: 50%;
+}
+.tips{
+    text-align: left;
+}
+.rise{
+    display: flex;
+}
+.weather-display {
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+ @media only screen and (max-width:600px) {
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .h1, p{
+    font-size:large;
+    font-weight: bolder;
+    }
+    .weather{
+    display: flex;
+    width: 90%;
+    margin-top: 20px;
+    background-color: rgba(101, 148, 171, 0.4);
+    font-size: medium;
+    }
+    .right{
+        height: auto;
+        margin-top: 10px;
+    }
+    #sinput{
+        margin-top: 0px;
+    }
+    .search-input-wrapper .search-icon{
+        margin-top: 0px;
+    }
+    .tips{
+        padding-left: 10px;
+    }
+
+}
+
+.weather-card {
+    padding: 1.5rem;
+    grid-column: span 2;
+    
+}
+
+.weather-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+
+    .weather-info {
+        flex-direction: row;
+    }
+}
+
+.current-location {
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+
+.weather-details {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    /* Equivalent to mt-4 */
+}
+
+@media (min-width: 768px) {
+
+    /* md breakpoint */
+    .weather-details {
+        margin-top: 0;
+        /* Remove margin on medium and larger screens */
+    }
+}
+
+.weather-icon {
+    margin-right: 1rem;
+    /* Equivalent to mr-4 */
+}
+
+.temp-display {
+    font-size: 1.5rem;
+    /* Adjust as needed */
+}
+
+.current-condition {
+    font-size: 1.125rem;
+    text-transform: capitalize;
+  
+}
+
+
+

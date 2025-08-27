@@ -1,0 +1,219 @@
+.outer{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.register-container {
+            margin-left: 100px;
+            width: 100%;
+            max-width: 650px;
+            font-family: 'Roboto', sans-serif;
+            background:  linear-gradient(135deg, #24bbe5 0%, #3f45e7 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 19px;
+        }
+        .register-container:hover{
+            box-shadow: 5px 5px 10px rgb(92, 100, 113);
+            transform: translateY(-5px);
+        }
+        .register-card {
+            background:whitesmoke;
+            /* width: 650px; */
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .register-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .register-icon {
+            background: linear-gradient(135deg, #7ecce1 0%, #3f45e7 100%);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        .register-icon i {
+            color: white;
+            }
+        .register-header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0c0f13;
+            margin-bottom: 8px;
+        }
+        .register-header p {
+            color: #393e47;
+            font-size: 16px;
+            margin: 0;
+        }
+        .form-group {
+            margin-bottom: 5px;
+            position: relative;
+            display: flex;
+            align-items: center; 
+        }
+        .form-label {
+            flex: 0 0 150px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #4a5568;
+            margin-bottom: 3px;
+            padding-left: 4px;
+             margin-right: 16px;
+        }
+         .form-input {
+            flex: 1;
+            width: 400px;
+            padding: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: #dadee0;
+            margin: 5px;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #667eea;
+            background-color: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        .form-select {
+            flex: 1;
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 16px;
+            background-color: #f7fafc;
+            appearance: none;
+        }
+        .form-select:focus {
+            outline: none;
+            border-color: #667eea;
+            background-color: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        .textarea {
+            min-height: 100px;
+            resize: vertical;
+            margin: 0;
+            background-color: #dadee0;
+        }
+         .register-button {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #4a67ea, #7b05f2);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+        }
+        .register-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+        .register-button:active {
+            transform: translateY(0);
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 24px;
+            color: #49505b;
+        }
+        .login-link a {
+            color: #0a35f5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        .form-hint {
+            font-size: 14px;
+            color: #3d4043;
+            margin:5px;
+            padding-left: 14px;
+        }
+        
+        .loading {
+            position: relative;
+            pointer-events: none;
+        }
+        .loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            margin: -10px 0 0 -10px;
+            border: 2px solid transparent;
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .success-message {
+            background: #f0fff4;
+            border: 1px solid #9ae6b4;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            color: #2f855a;
+            margin-bottom: 20px;
+            display: none;
+        }
+         
+        @media (max-width: 600px) {
+            .register-card {
+                padding: 30px 20px;
+                margin: 0 10px;
+            }
+            .register-header h1 {
+                font-size: 24px;
+            }
+            .register-icon {
+                width: 60px;
+                height: 60px;
+            }
+            .register-icon i {
+                font-size: 30px;
+            }
+        }
+       
+        .form-group {
+            animation: slideUp 0.5s ease forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .form-group:nth-child(1) { animation-delay: 0.1s; }
+        .form-group:nth-child(2) { animation-delay: 0.2s; }
+        .form-group:nth-child(3) { animation-delay: 0.3s; }
+        .form-group:nth-child(4) { animation-delay: 0.4s; }
+        .form-group:nth-child(5) { animation-delay: 0.5s; }
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }

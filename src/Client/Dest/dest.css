@@ -1,0 +1,92 @@
+.carousel-inner{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    margin-left: 170px;
+   
+}
+.carousel-item{
+    background-image: cover;
+}
+.edakkal{
+    height: 450px;
+    width: 1000px;
+}
+.carousel-control-prev{
+    margin-left: 150px;
+}
+.carousel-control-next{
+    margin-right: 170px;
+}
+.carousel-control-next:hover{
+    background:none;
+}
+.carousel-control-prev:hover{
+    background:none;
+}
+.place{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+}
+input::placeholder{
+    color: rgb(128, 125, 125);
+}
+#searchInput{
+    background-color: rgb(148, 189, 202);
+    border-radius: 10px;
+    border-color: rgb(129, 232, 243);
+}
+#searchInput:hover{
+    background-color: rgb(143, 205, 220);
+}
+.search {
+  position: relative;
+  width: 300px;
+  margin-top: 20px; 
+  margin-left: 40%;
+  margin-bottom: 50px;
+}
+
+.search input {
+  width: 100%;
+  padding-left: 40px; 
+  height: 40px;
+  box-sizing: border-box;
+}
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+ @media only screen and (max-width:600px){
+.search {
+  position: absolute;
+  width: 200px;
+  right:50%;
+  transform: translate(+50%);
+}
+.edakkal{
+    height: 350px;
+}
+.carousel-inner{
+    margin: 10px;
+    width: 95%;
+    margin-top: 70px;
+}
+.carousel-control-prev{
+    margin-left: 20px;
+}
+.carousel-control-next{
+    margin-right: 20px;
+}
+
+ }

@@ -1,0 +1,75 @@
+.review{
+    margin-top:40px;
+    line-height: 15px;
+    font-family:cursive;
+}
+.review-form{
+    margin-top: 40px;
+    display: flex;
+    
+}
+.div1{
+    width: 50%;
+}
+.form{
+    border: 1px outset rgb(51, 128, 192);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 350px;
+}
+.form:hover{
+    box-shadow: 4px 4px 5px rgb(62, 78, 92);
+}
+input::placeholder,textarea::placeholder{
+    padding-left: 10px;
+}
+.btn{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(65, 122, 202);
+    font-size: 20px;
+    transform: translateY(-8px);
+    
+}
+.btn1{
+    margin-right: 10px;
+}
+.btn:hover{
+    background-color: rgb(89, 136, 202);
+    box-shadow: 2px 2px 5px rgb(5, 27, 87);
+}
+textarea{
+    min-height: 130px;
+}
+ @media only screen and (max-width:600px){
+    .review h1,h3{
+        margin: 5px;
+    margin-top:10px;
+    line-height: 15px;
+    font-size:medium;
+    }
+    .review-form{
+        flex-direction:column ;
+        justify-content: center;
+    }
+    .div1{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .subbtn{
+        margin-left: 120px;
+        width: 100px;
+    }
+    #destbtn{
+        display: flex;
+        margin:10px;
+       
+    }
+    .dbtn{
+        width: 150px;
+         height: auto;
+    }
+ }

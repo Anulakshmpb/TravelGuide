@@ -1,0 +1,13 @@
+ .cardcontainer:hover {
+   transform: translateY(-10px);
+   box-shadow: 20px 20px 30px rgba(17, 7, 0, 0.15); 
+ }
+ .restbtn:hover{
+    background-color: rgb(5, 60, 114);
+    transform: translateY(-2px);
+    color: antiquewhite;
+ }  
+ .dlt:hover{
+    background-color: rgb(164, 3, 3);
+    transform: translateY(-2px);
+ } 

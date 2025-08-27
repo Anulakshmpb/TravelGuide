@@ -1,7 +1,26 @@
 .App {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #919293;
+  font-size: 20px;
 }
-
+.copyright{
+  background-color: rgb(70, 131, 215);
+}
+.copy_p{
+  color: black;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +31,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@media only screen and (max-width:700px){
+.copy_p{
+  font-size: small;
+}  
+.copyright p{
+  margin: 0;
+}
+}
 
 .App-header {
   background-color: #282c34;
@@ -21,11 +48,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(13, 13, 13);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #282929;
 }
 
 @keyframes App-logo-spin {
